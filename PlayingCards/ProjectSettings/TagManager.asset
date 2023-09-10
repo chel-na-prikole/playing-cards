@@ -41,12 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: CardBody
-    uniqueID: 1145362175
-    locked: 0
-  - name: Suit
-    uniqueID: 2400171017
-    locked: 0
-  - name: Value
-    uniqueID: 3319989569
+  - name: Card
+    uniqueID: 1533108699
     locked: 0
