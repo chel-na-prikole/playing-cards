@@ -6,11 +6,14 @@ public class ColorPicker : MonoBehaviour
     [SerializeField, Header("References")] private CardColorData _cardColorData;
     [SerializeField] private SpriteRenderer _spriteRenderer;
 
-#if UNITY_EDITOR
-    private void OnDrawGizmosSelected() => SetColor();
+    private void Awake()
+    {
+        if (_spriteRenderer.color != _cardColorData[_colorType])
+        {
+            SetColor();
+        }
+    }
     
-    private void OnValidate() => SetColor();
-
     private void SetColor()
     {
         if (_cardColorData != null && _spriteRenderer != null)
@@ -18,5 +21,9 @@ public class ColorPicker : MonoBehaviour
             _spriteRenderer.color = _cardColorData[_colorType];
         }
     }
+
+#if UNITY_EDITOR
+    private void OnDrawGizmosSelected() => SetColor();
+    private void OnValidate() => SetColor();
 #endif
 }
