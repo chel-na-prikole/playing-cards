@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85fff92554374194974d5b2f8c325358, type: 3}
+  m_Name: CardSuitPositionData
+  m_EditorClassIdentifier: 
+  _two:
+  - {x: 0, y: -1.05}
+  - {x: 0, y: 1.05}
+  _three:
+  - {x: 0, y: 1.625}
+  - {x: 0, y: 0}
+  - {x: 0, y: -1.625}
+  _four:
+  - {x: -1, y: 1.625}
+  - {x: 1, y: 1.625}
+  - {x: 1, y: -1.625}
+  - {x: -1, y: -1.625}
+  _five:
+  - {x: -1, y: 1.625}
+  - {x: 1, y: 1.625}
+  - {x: 1, y: -1.625}
+  - {x: -1, y: -1.625}
+  - {x: 0, y: 0}
+  _six:
+  - {x: -1, y: 1.625}
+  - {x: 1, y: 1.625}
+  - {x: 1, y: -1.625}
+  - {x: -1, y: -1.625}
+  - {x: -1, y: 0}
+  - {x: 1, y: 0}
+  _seven:
+  - {x: -1, y: 1.625}
+  - {x: 1, y: 1.625}
+  - {x: 1, y: -1.625}
+  - {x: -1, y: -1.625}
+  - {x: -1, y: 0}
+  - {x: 1, y: 0}
+  - {x: 0, y: 0.85}
+  _eight:
+  - {x: -1, y: 1.625}
+  - {x: 1, y: 1.625}
+  - {x: 1, y: -1.625}
+  - {x: -1, y: -1.625}
+  - {x: 1, y: 0.55}
+  - {x: 1, y: -0.55}
+  - {x: -1, y: -0.55}
+  - {x: -1, y: 0.55}
+  _nine:
+  - {x: -1, y: 1.625}
+  - {x: 1, y: 1.625}
+  - {x: 1, y: -1.625}
+  - {x: -1, y: -1.625}
+  - {x: 1, y: 0.55}
+  - {x: 1, y: -0.55}
+  - {x: -1, y: -0.55}
+  - {x: -1, y: 0.55}
+  - {x: 0, y: 0}
+  _ten:
+  - {x: -1, y: 1.625}
+  - {x: 1, y: 1.625}
+  - {x: 1, y: -1.625}
+  - {x: -1, y: -1.625}
+  - {x: 1, y: 0.55}
+  - {x: 1, y: -0.55}
+  - {x: -1, y: -0.55}
+  - {x: -1, y: 0.55}
+  - {x: 0, y: 1.06}
+  - {x: 0, y: -1.06}
+  _jack:
+  - {x: 0.55, y: 0}
+  _queen:
+  - {x: 0.55, y: 0}
+  _king:
+  - {x: 0.55, y: 0}
+  _ace:
+  - {x: 0, y: 0}

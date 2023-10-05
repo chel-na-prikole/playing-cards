@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d56a2c66afd85884db933b06649462c8, type: 3}
+  m_Script: {fileID: 11500000, guid: efc01038fc6141ed82ad8d68f36b0d28, type: 3}
   m_Name: CardColorData
   m_EditorClassIdentifier: 
-  _cardWhite: {r: 0.9294118, g: 0.9294118, b: 0.9294118, a: 1}
-  _cardBlack: {r: 0.21568629, g: 0.19215688, b: 0.19215688, a: 1}
-  _cardRed: {r: 0.8431373, g: 0.17254902, b: 0.17254902, a: 1}
+  <CardBodyColor>k__BackingField: 0
+  <BorderColor>k__BackingField: 1
+  _cardWhite: {r: 0.8867924, g: 0.8867924, b: 0.8867924, a: 1}
+  _cardBlack: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
+  _cardRed: {r: 0.7264151, g: 0.17475079, b: 0.17475079, a: 1}

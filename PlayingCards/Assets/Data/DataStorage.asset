@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bfdde2f57e24fbdbfa7868c47ef65b8, type: 3}
+  m_Name: DataStorage
+  m_EditorClassIdentifier: 
+  <CardValuePositionData>k__BackingField: {fileID: 11400000, guid: 6f68d6678d6d1e2479ead6bdc0224ac5, type: 2}
+  <CardColorData>k__BackingField: {fileID: 11400000, guid: 33d6df076faf98f40ba7d73ce165b137, type: 2}
+  <CardValueData>k__BackingField: {fileID: 11400000, guid: 8e21702aaee7ae1468863a63d9081e84, type: 2}
+  <CardSuitData>k__BackingField: {fileID: 11400000, guid: 0e5f4869ad32289418ad080f855c31a9, type: 2}
+  <CardSuitPositionData>k__BackingField: {fileID: 11400000, guid: 22f73f8e0af872846b316854fcf30c2a, type: 2}
+  <CardComponentsData>k__BackingField: {fileID: 11400000, guid: 14f3ee9cf8d001c49aa7869e16a65f14, type: 2}
+  <HighRankData>k__BackingField: {fileID: 11400000, guid: 53a6bdf97c3fc8e4eb3ff80665471e93, type: 2}

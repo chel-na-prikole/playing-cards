@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03e55ccf2c704aceb061210a25da5079, type: 3}
+  m_Name: CardComponentsData
+  m_EditorClassIdentifier: 
+  <CardBody>k__BackingField: {fileID: 1299629460692187720, guid: 7addd3c66623fe34faab4580de9a020a, type: 3}
+  <SpriteView>k__BackingField: {fileID: 2107373873174176935, guid: 26f4f7c6c36a75a4cac4e7f8a635a9b0, type: 3}

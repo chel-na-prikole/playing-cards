@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e0af18ecf14ddb8b1a487a2d990326, type: 3}
+  m_Name: CardValueData
+  m_EditorClassIdentifier: 
+  _two: {fileID: 576917421, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
+  _three: {fileID: -622442585, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
+  _four: {fileID: 578230240, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
+  _five: {fileID: -653829880, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
+  _six: {fileID: -1478671860, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
+  _seven: {fileID: 1362892372, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
+  _eight: {fileID: -2146575471, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
+  _nine: {fileID: -649026446, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
+  _ten: {fileID: 1965399292, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
+  _jack: {fileID: 645324181, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
+  _queen: {fileID: -937474136, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
+  _king: {fileID: -788951427, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
+  _ace: {fileID: 760319237, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}

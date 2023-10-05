@@ -32,7 +32,7 @@ Transform:
   - {fileID: 3262177255616704084}
   - {fileID: 2576113262921129157}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2412432708144872199
 PrefabInstance:
@@ -48,7 +48,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3034763669300284327, guid: 7addd3c66623fe34faab4580de9a020a, type: 3}
       propertyPath: m_Size.x
-      value: 0.2
+      value: 0.26666668
       objectReference: {fileID: 0}
     - target: {fileID: 3034763669300284327, guid: 7addd3c66623fe34faab4580de9a020a, type: 3}
       propertyPath: m_Size.y
@@ -57,7 +57,7 @@ PrefabInstance:
     - target: {fileID: 3034763669300284327, guid: 7addd3c66623fe34faab4580de9a020a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1822252970, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
+      objectReference: {fileID: -937474136, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
     - target: {fileID: 3034763669300284327, guid: 7addd3c66623fe34faab4580de9a020a, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -80,7 +80,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3952004393152963446, guid: 7addd3c66623fe34faab4580de9a020a, type: 3}
       propertyPath: m_Size.x
-      value: 0.2
+      value: 0.26666668
       objectReference: {fileID: 0}
     - target: {fileID: 3952004393152963446, guid: 7addd3c66623fe34faab4580de9a020a, type: 3}
       propertyPath: m_Size.y
@@ -89,7 +89,7 @@ PrefabInstance:
     - target: {fileID: 3952004393152963446, guid: 7addd3c66623fe34faab4580de9a020a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1822252970, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
+      objectReference: {fileID: -937474136, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
     - target: {fileID: 3952004393152963446, guid: 7addd3c66623fe34faab4580de9a020a, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
