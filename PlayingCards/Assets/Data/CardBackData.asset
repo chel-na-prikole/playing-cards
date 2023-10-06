@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d7a6fa16e648d28da1edfdf18e1148, type: 3}
+  m_Name: CardBackData
+  m_EditorClassIdentifier: 
+  <CardBackColor>k__BackingField: {r: 0.65882355, g: 0.24705882, b: 0.28235295, a: 1}
+  <CardBackSprite>k__BackingField: {fileID: -620903851, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}

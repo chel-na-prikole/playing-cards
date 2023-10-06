@@ -12,5 +12,6 @@ namespace Data
         [field: SerializeField] public CardSuitPositionData CardSuitPositionData { get; private set; }
         [field: SerializeField] public CardComponentsData CardComponentsData { get; private set; }
         [field: SerializeField] public HighRankData HighRankData { get; private set; }
+        [field: SerializeField] public CardBackData CardBackData { get; private set; }
     }
 }

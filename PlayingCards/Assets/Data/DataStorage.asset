@@ -19,3 +19,4 @@ MonoBehaviour:
   <CardSuitPositionData>k__BackingField: {fileID: 11400000, guid: 22f73f8e0af872846b316854fcf30c2a, type: 2}
   <CardComponentsData>k__BackingField: {fileID: 11400000, guid: 14f3ee9cf8d001c49aa7869e16a65f14, type: 2}
   <HighRankData>k__BackingField: {fileID: 11400000, guid: 53a6bdf97c3fc8e4eb3ff80665471e93, type: 2}
+  <CardBackData>k__BackingField: {fileID: 11400000, guid: 3c77d37c9d532a74ab06f1b421c56a9f, type: 2}
