@@ -19,8 +19,55 @@ namespace Editor
             var cardGenerator = (CardGenerator) target;
             
             DrawDefaultInspector();
-            DrawUpdateCardsButton(cardGenerator);
             DrawGenerateButton(cardGenerator);
+            DrawUpdateCardsButton(cardGenerator);
+        }
+
+        private static void DrawGenerateButton(CardGenerator cardGenerator)
+        {
+            if (GUILayout.Button("Generate"))
+            {
+                CardGeneratorExceptionHandler.CheckFolderPath(cardGenerator);
+                
+                var directoryPath = GetDirectoryPath(cardGenerator);
+                var dataStorage = cardGenerator.DataStorage;
+                
+                foreach (CardSuit cardSuit in Enum.GetValues(typeof(CardSuit)))
+                foreach (CardValue cardValue in Enum.GetValues(typeof(CardValue)))
+                {
+                    CalculateParameters(dataStorage, cardValue, cardSuit, directoryPath, 
+                        out var cardName, out var cardPrefabPath, out var valueSprite, out var suitSprite, 
+                        out var suitPositions, out var color, out var cardBodyColor, out var cardBorderColor);
+            
+                    var card = new GameObject(cardName);
+            
+                    var cardBody = Instantiate(dataStorage.CardComponentsData.CardBody, Vector3.zero, Quaternion.identity, card.transform);
+                    cardBody.UpdateView(cardBodyColor, cardBorderColor);
+            
+                    foreach (var cardValuePosition in dataStorage.CardValuePositionData.CardValuePositions)
+                    {
+                        var value = Instantiate(dataStorage.CardComponentsData.ValueView, Offset + cardValuePosition.ToVector3(), Quaternion.identity, card.transform);
+                        value.SpriteView.UpdateView(valueSprite, color);
+                    }
+
+                    foreach (var suitPosition in suitPositions)
+                    {
+                        var suit = Instantiate(dataStorage.CardComponentsData.SuitView, Offset + suitPosition.ToVector3(), Quaternion.identity, card.transform);
+                        suit.SpriteView.UpdateView(suitSprite, color);
+                    }
+
+                    if (dataStorage.HighRankData.GetIsHighRank(cardValue))
+                    {
+                        var rankSprite = dataStorage.HighRankData[cardValue];
+                        var rank = Instantiate(dataStorage.CardComponentsData.HighRankView, Offset + dataStorage.HighRankData.HighRankSpritePosition.ToVector3(), Quaternion.identity, card.transform);
+                        rank.SpriteView.UpdateView(rankSprite, color);
+                    }
+
+                    PrefabUtility.SaveAsPrefabAsset(card, cardPrefabPath);
+                    AssetDatabase.Refresh();
+                    DestroyImmediate(card);
+                }
+            }
         }
 
         private static void DrawUpdateCardsButton(CardGenerator cardGenerator)
@@ -79,58 +126,7 @@ namespace Editor
             }
         }
 
-        private static void DrawGenerateButton(CardGenerator cardGenerator)
-        {
-            if (GUILayout.Button("Generate"))
-            {
-                CardGeneratorExceptionHandler.CheckFolderPath(cardGenerator);
-                
-                var directoryPath = GetDirectoryPath(cardGenerator);
-                
-                foreach (CardSuit cardSuit in Enum.GetValues(typeof(CardSuit)))
-                foreach (CardValue cardValue in Enum.GetValues(typeof(CardValue)))
-                {
-                    GenerateCard(cardValue, cardSuit, directoryPath, cardGenerator.DataStorage);
-                }
-            }
-        }
-
         private static string GetDirectoryPath(CardGenerator cardGenerator) => AssetDatabase.GetAssetPath(cardGenerator.TargetFolder);
-
-        private static void GenerateCard(CardValue cardValue, CardSuit cardSuit, string directoryPath, DataStorage dataStorage)
-        {
-            CalculateParameters(dataStorage, cardValue, cardSuit, directoryPath, 
-                out var cardName, out var cardPrefabPath, out var valueSprite, out var suitSprite, 
-                out var suitPositions, out var color, out var cardBodyColor, out var cardBorderColor);
-            
-            var card = new GameObject(cardName);
-            
-            var cardBody = Instantiate(dataStorage.CardComponentsData.CardBody, Vector3.zero, Quaternion.identity, card.transform);
-            cardBody.UpdateView(cardBodyColor, cardBorderColor);
-            
-            foreach (var cardValuePosition in dataStorage.CardValuePositionData.CardValuePositions)
-            {
-                var value = Instantiate(dataStorage.CardComponentsData.ValueView, Offset + cardValuePosition.ToVector3(), Quaternion.identity, card.transform);
-                value.SpriteView.UpdateView(valueSprite, color);
-            }
-
-            foreach (var suitPosition in suitPositions)
-            {
-                var suit = Instantiate(dataStorage.CardComponentsData.SuitView, Offset + suitPosition.ToVector3(), Quaternion.identity, card.transform);
-                suit.SpriteView.UpdateView(suitSprite, color);
-            }
-
-            if (dataStorage.HighRankData.GetIsHighRank(cardValue))
-            {
-                var rankSprite = dataStorage.HighRankData[cardValue];
-                var rank = Instantiate(dataStorage.CardComponentsData.HighRankView, Offset + dataStorage.HighRankData.HighRankSpritePosition.ToVector3(), Quaternion.identity, card.transform);
-                rank.SpriteView.UpdateView(rankSprite, color);
-            }
-
-            PrefabUtility.SaveAsPrefabAsset(card, cardPrefabPath);
-            AssetDatabase.Refresh();
-            DestroyImmediate(card);
-        }
 
         private static void CalculateParameters(DataStorage dataStorage, CardValue cardValue, CardSuit cardSuit, string cardsDirectoryPath, 
             out string cardName, out string cardPrefabPath, out Sprite valueSprite, out Sprite suitSprite, 
