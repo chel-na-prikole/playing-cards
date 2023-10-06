@@ -2,8 +2,8 @@
 {
     public enum CardColor
     {
-        White,
-        Black,
-        Red,
+        CardBody,
+        DarkSuit,
+        LightSuit,
     }
 }
