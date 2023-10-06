@@ -138,6 +138,29 @@ namespace Editor
                     
                     PrefabUtility.SavePrefabAsset(prefabObject);
                 }
+
+                {
+                    var prefabPath = GetPrefabPath(directoryPath, CardBackData.CardBackName);
+                    var cardBackPrefab = AssetDatabase.LoadAssetAtPath(prefabPath, typeof(GameObject)) as GameObject;
+                    CardGeneratorExceptionHandler.CheckObjectNull(cardBackPrefab);
+                
+                    // ReSharper disable once PossibleNullReferenceException
+                    var cardBodyViews = cardBackPrefab.GetComponentsInChildren<CardBodyView>();
+
+                    foreach (var cardBodyView in cardBodyViews)
+                    {
+                        cardBodyView.UpdateView(cardBodyColor, cardBorderColor);
+                    }
+                    
+                    var cardBackViews = cardBackPrefab.GetComponentsInChildren<CardBackView>();
+
+                    foreach (var cardBackView in cardBackViews)
+                    {
+                        cardBackView.SpriteView.UpdateView(dataStorage.CardBackData.CardBackSprite, dataStorage.CardBackData.CardBackColor);
+                    }
+                    
+                    PrefabUtility.SavePrefabAsset(cardBackPrefab);
+                }
             }
         }
 

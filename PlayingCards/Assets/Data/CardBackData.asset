@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d7a6fa16e648d28da1edfdf18e1148, type: 3}
   m_Name: CardBackData
   m_EditorClassIdentifier: 
-  <CardBackColor>k__BackingField: {r: 0.65882355, g: 0.24705882, b: 0.28235295, a: 1}
+  <CardBackColor>k__BackingField: {r: 0.24775268, g: 0.2470588, b: 0.65882355, a: 1}
   <CardBackSprite>k__BackingField: {fileID: -620903851, guid: b6e4cdc97e1e19c4387f9f45349d0cb4, type: 3}
