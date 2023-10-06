@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEngine;
-using Views;
+using Data;
 using Object = UnityEngine.Object;
 
 namespace Editor
