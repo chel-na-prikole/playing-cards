@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: CardGenerator
   m_EditorClassIdentifier: 
   <DataStorage>k__BackingField: {fileID: 11400000, guid: 88335b401b36ca445b5cb2cc2f26885a, type: 2}
-  <Folder>k__BackingField: {fileID: 0}
+  <TargetFolder>k__BackingField: {fileID: 102900000, guid: bf55a76e8ec749b4fa565d64bc34daa8, type: 3}

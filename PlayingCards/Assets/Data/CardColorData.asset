@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <CardBodyColor>k__BackingField: 0
   <BorderColor>k__BackingField: 1
-  _cardWhite: {r: 0.8867924, g: 0.8867924, b: 0.8867924, a: 1}
-  _cardBlack: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
-  _cardRed: {r: 0.7264151, g: 0.17475079, b: 0.17475079, a: 1}
+  _cardWhite: {r: 0.85098046, g: 0.82745105, b: 0.85098046, a: 1}
+  _cardBlack: {r: 0.16470589, g: 0.1254902, b: 0.16470589, a: 1}
+  _cardRed: {r: 0.65882355, g: 0.24705884, b: 0.28235295, a: 1}

@@ -7,6 +7,8 @@ namespace Data
     public class CardComponentsData : ScriptableObject
     {
         [field: SerializeField] public CardBodyView CardBody { get; private set; }
-        [field: SerializeField] public SpriteView SpriteView { get; private set; }
+        [field: SerializeField] public ValueView ValueView { get; private set; }
+        [field: SerializeField] public SuitView SuitView { get; private set; }
+        [field: SerializeField] public HighRankView HighRankView { get; private set; }
     }
 }

@@ -22,7 +22,7 @@ namespace Data
         [SerializeField] private List<Vector2> _king;
         [SerializeField] private List<Vector2> _ace;
 
-        public IReadOnlyCollection<Vector2> this[CardValue cardValue] => cardValue switch
+        public IReadOnlyList<Vector2> this[CardValue cardValue] => cardValue switch
         {
             CardValue.Two => _two,
             CardValue.Three => _three,

@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: CardComponentsData
   m_EditorClassIdentifier: 
   <CardBody>k__BackingField: {fileID: 1299629460692187720, guid: 7addd3c66623fe34faab4580de9a020a, type: 3}
-  <SpriteView>k__BackingField: {fileID: 2107373873174176935, guid: 26f4f7c6c36a75a4cac4e7f8a635a9b0, type: 3}
+  <ValueView>k__BackingField: {fileID: 3361512238288355323, guid: 26f4f7c6c36a75a4cac4e7f8a635a9b0, type: 3}
+  <SuitView>k__BackingField: {fileID: 231262462703973932, guid: 77ea245cdcd4afd47b096d395de6b4dd, type: 3}
+  <HighRankView>k__BackingField: {fileID: 6305106144048052482, guid: 765d9fe9b18164140b14d0b04424218d, type: 3}

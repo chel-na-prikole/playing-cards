@@ -5,5 +5,5 @@ using UnityEngine;
 public class CardGenerator : ScriptableObject
 {
     [field: SerializeField] public DataStorage DataStorage { get; private set; }
-    [field: SerializeField] public Object Folder { get; private set; }
+    [field: SerializeField] public Object TargetFolder { get; private set; }
 }

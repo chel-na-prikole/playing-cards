@@ -8,6 +8,6 @@ namespace Data
     {
         [SerializeField] private List<Vector2> _cardValuePositions;
 
-        public IEnumerable<Vector2> CardValuePositions => _cardValuePositions;
+        public IReadOnlyList<Vector2> CardValuePositions => _cardValuePositions;
     }
 }
