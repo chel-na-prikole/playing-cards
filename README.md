@@ -52,3 +52,8 @@ https://github.com/chel-na-prikole/playing-cards/assets/144178900/86800471-d887-
 ```CardGenerator``` contains functionality to update existing and generate new card prefabs
 
 ![image](https://github.com/chel-na-prikole/playing-cards/assets/144178900/1dcc1768-a663-4bd2-aed5-80a9724ea8e3)
+
+## Settings demo
+
+https://github.com/chel-na-prikole/playing-cards/assets/144178900/eb763663-b072-4abe-8c53-cf9e3d08f906
+
